@@ -1,18 +1,21 @@
-<h1>Active Directory Lab</h1>
+<h1>Global Heat Map: Honeypot - Failed RDP Logins</h1>
 
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
-<br />
+Brief Description:
+This project involves the implementation of a vulnerable virtual machine configured to allow unrestricted inbound and outbound traffic without constraints on the Firewall. A Powershell script is then used to continuously extract security event ID 4625 (indicating failed log-on attempts) from the Windows Event Viewer. Additionally, the script captures API requests to "ipgeolocation," translating source IP addresses into Longitude and Latitude data. This data is then ingested into Microsoft Sentinel to be mapped out for visualization. 
+
+Objective: 
+This project aims to vividly illustrate the swift exploitation of misconfigured workstations exposed on the web. Threat actors globally engage in rapid brute-force attacks, highlighting the inherent risks to organizational security.
 
 
 <h2>Languages and Utilities Used</h2>
 
 - <b>PowerShell</b> 
-- <b>Diskpart</b>
 
 <h2>Environments Used </h2>
 
+- <b>Azure</b> (21H2)
 - <b>Windows 10</b> (21H2)
 
 <h2>Program walk-through:</h2>
