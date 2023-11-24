@@ -1,11 +1,10 @@
 <h1>Global Heat Map: Honeypot - Failed RDP Logins</h1>
 
 
-<h2>Description</h2>
-Brief Description:
+<h2>Brief Description</h2>
 This project involves the implementation of a vulnerable virtual machine configured to allow unrestricted inbound and outbound traffic without constraints on the Firewall. A Powershell script is then used to continuously extract security event ID 4625 (indicating failed log-on attempts) from the Windows Event Viewer. Additionally, the script captures API requests to "ipgeolocation," translating source IP addresses into Longitude and Latitude data. This data is then ingested into Microsoft Sentinel to be mapped out for visualization. 
 
-Objective: 
+<h2>Project Objective</h2>
 This project aims to vividly illustrate the swift exploitation of misconfigured workstations exposed on the web. Threat actors globally engage in rapid brute-force attacks, highlighting the inherent risks to organizational security.
 
 
