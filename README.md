@@ -10,14 +10,14 @@ This project aims to vividly illustrate the instantaneous exploitation of miscon
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
+- <b>PowerShell</b>
+- <b>Kusto Query Language (KQL)</b>
+- <b>Windows 10</b>
+- <b>Microsoft Azure</b>
+- <b>Log Analytics Workspace<b>
+- <b>Azure Sentinel (SIEM)<b>
 
-<h2>Environments Used </h2>
-
-- <b>Azure</b> (21H2)
-- <b>Windows 10</b> (21H2)
-
-<h2>Program walk-through:</h2>
+<h2>Project walk-through:</h2>
 
 <p align="center">
 Launch the utility: <br/>
