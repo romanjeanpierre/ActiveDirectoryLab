@@ -7,6 +7,9 @@ This project involves the implementation of a vulnerable virtual machine configu
 <h2>Project Objective</h2>
 This project aims to vividly illustrate the instantaneous exploitation of misconfigured workstations exposed on the web. Threat actors globally engage in rapid brute-force attacks, highlighting the inherent risks to organizational security.
 
+<h2>Overview</h2>
+<p align="center">
+<img src="https://i.imgur.com/y3Aqek1.png" height="80%" width="80%">
 
 <h2>Languages and Utilities Used</h2>
 
