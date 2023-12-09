@@ -67,14 +67,20 @@ This script establishes a custom XML filter to detect failed Remote Desktop Prot
 
 <br />
 <br /> </p>
-
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Step 4: Extract Fields from Custom Log File
+<p align="center">  <br/>
+Run Query: Extract relevant field used in Sentinel:  <br/>
+<img src="https://i.imgur.com/ZD0hxYm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <br />
-
-
+Step 5: Heat Map
+<p align="center">  <br/>
+Results of Failed RDP after 24 Hours:  <br/>
+<img src="https://i.imgur.com/qUX0dqS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<br />
 <!--
  ```diff
 - text in red
