@@ -25,15 +25,21 @@ Step 1: Deploy Virtual Machine
 
 <p align="center">
 Instance Details: <br/>
-<img src="https://imgur.com/a/mbelA8m" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/F8fdKPW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Networking Details:  <br/>
+<img src="https://i.imgur.com/oGd6m6h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Misconfigure the VM to allow RDP traffic, create a new NIC network security group, remove existing inbound rules, and add a new inbound rule allowing any protocol
+<br />
+<br />
+<br />
+<br />
+Step 2: Config Environment
+Microsoft Defender: <br/>
+<img src="https://i.imgur.com/OnKGVRq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Confirm your selection:  <br/>
