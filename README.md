@@ -21,10 +21,11 @@ This project aims to vividly illustrate the instantaneous exploitation of miscon
 - <b>Azure Sentinel (SIEM)<b>
 
 <h2>Project walk-through:</h2>
+Step 1: Deploy Virtual Machine
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Instance Details: <br/>
+<img src="https://imgur.com/a/mbelA8m" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
