@@ -2,10 +2,10 @@
 
 
 <h2>Brief Description</h2>
-This project involves the implementation of a vulnerable virtual machine configured to allow unrestricted inbound and outbound traffic without constraints on the Firewall. A Powershell script is then used to continuously extract security event ID 4625 (indicating failed log-on attempts) from the Windows Event Viewer. Additionally, the script captures API requests to "ipgeolocation", translating source IP addresses into Longitude and Latitude data. This data is then ingested into Microsoft Sentinel to be mapped out for visualization. 
+This project involves the implementation of a vulnerable virtual machine configured to allow unrestricted inbound and outbound traffic without constraints on the Firewall. A Powershell script is then used to continuously extract security event ID 4625 (indicating failed log-on attempts) from the Windows Event Viewer. Additionally, the script captures API requests to "IP geolocation", translating source IP addresses into Longitude and Latitude data. This data is then ingested into Microsoft Sentinel to be mapped out for visualization. 
 
 <h2>Project Objective</h2>
-This project aims to vividly illustrate the instantaneous exploitation of misconfigured workstations exposed on the web. Threat actors globally engage in rapid brute-force attacks, highlighting the inherent risks to organizational security.
+Illustrate the rapid exploitation of misconfigured workstations on the web, showcasing the risks to organizational security posed by global brute-force attacks.
 
 <h2>Overview</h2>
 <p align="center">
@@ -22,12 +22,16 @@ This project aims to vividly illustrate the instantaneous exploitation of miscon
 
 <h2>Project walk-through:</h2>
 Step 1: Deploy Virtual Machine
-<p align="center">
-Instance Details: <br/>
+<br/>
+<br/>
+Instance Details:
+<br/>
+<br/>
 <img src="https://i.imgur.com/F8fdKPW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Networking Details:  <br/>
+Networking Details: <br/>
+<br/>
 <img src="https://i.imgur.com/oGd6m6h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -35,49 +39,55 @@ Misconfigure the VM to allow RDP traffic, create a new NIC network security grou
 <br />
 <br />
 <br />
-<br /></p>
-
 Step 2: Config Environment
-<p align="center">
-<br/> Microsoft Defender: <br/>
+<br/>
+<br/> Microsoft Defender: 
+<br/>
+<br/>
 <img src="https://i.imgur.com/OnKGVRq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Log Analytics Workspace:  <br/>
+<br/>
+<br/>
+Log Analytics Workspace:  
+<br/>
+<br/>
 <img src="https://i.imgur.com/YP977ZY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Disable Firewall in VM:  <br/>
+Disable Firewall in VM: 
+<br/>
+<br/>
 <img src="https://i.imgur.com/GyhISce.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Use Host Machine to verify if ICMP packets is reachable ping -t <VM IP address> 
+Use Host Machine to verify if ICMP packets are reachable using 'ping -t <VM IP address>'.
 <br />
 <br />
 <br />
-<br /></p>
-
-Step 3: Script Execution
- <p align="center">  <br/>
-Powershell: Use Powershell script from github.com/Joshmadakor1 and input API key from IPGeolocation  <br/> <br/>
+Step 3: Script Execution 
+<br />
+<br />
+Powershell: 
+<br/> 
+<br/>
 <img src="https://i.imgur.com/D7thSgi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 <br/> 
 <br/>
-This script establishes a custom XML filter to detect failed Remote Desktop Protocol (RDP) logins in Windows Security Events. It involves setting variables, testing with a sample log, and storing output logs on the guest machine. The script further ingests event logs into Log Analytics workspaces, enriching the output with geographical data. The process initiates by defining variables, including the geolocation API key, log file details, and an XML filter targeting specific Security log events. The `write-Sample-Log` function generates sample log entries for training in Log Analytics workspaces. The primary script continuously monitors Windows Event Viewer logs using an infinite loop, extracting relevant details for each failed RDP login event, such as timestamp, event ID, destination host, username, source host, and source IP. Geolocation data is obtained via an API, and if the log entry is missing, the script appends the gathered data to a custom log file.
-
+The Powershell script detects failed RDP logins in Windows Security Events, ingesting logs into Log Analytics workspaces, and enriching output with geographical data.
 <br />
-<br /> </p>
-Step 4: Extract Fields from Custom Log File
-<p align="center">  <br/>
-Run Query: Extract relevant field used in Sentinel:  <br/>
+<br /> 
+<br /> 
+Step 4: Extract Fields from Custom Log File 
+<br/>
+<br/>
+Run Query:<br/>
+<br/>
 <img src="https://i.imgur.com/ZD0hxYm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <br />
-<br />
-<p align="center">  <br/>
-Results of Failed RDP after 24 Hours:  <br/>
+<br /> 
+Results of Failed RDP after 24 Hours:
+<br/>
+<br/> 
 <img src="https://i.imgur.com/qUX0dqS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <br />
 <br />
 <!--
