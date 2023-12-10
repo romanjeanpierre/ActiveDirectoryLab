@@ -74,7 +74,6 @@ Run Query: Extract relevant field used in Sentinel:  <br/>
 </p>
 <br />
 <br />
-Step 5: Heat Map
 <p align="center">  <br/>
 Results of Failed RDP after 24 Hours:  <br/>
 <img src="https://i.imgur.com/qUX0dqS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
