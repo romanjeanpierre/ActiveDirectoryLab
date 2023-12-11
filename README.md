@@ -27,12 +27,12 @@ Step 1: Deploy Virtual Machine
 Instance Details:
 <br/>
 <br/>
-<img src="https://i.imgur.com/F8fdKPW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/F8fdKPW.png" height="80%" width="80%"/>
 <br />
 <br />
 Networking Details: <br/>
 <br/>
-<img src="https://i.imgur.com/oGd6m6h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/oGd6m6h.png" height="80%" width="80%"/>
 <br />
 <br />
 Misconfigure the VM to allow RDP traffic, create a new NIC network security group, remove existing inbound rules, and add a new inbound rule allowing any protocol
@@ -44,19 +44,19 @@ Step 2: Config Environment
 <br/> Microsoft Defender: 
 <br/>
 <br/>
-<img src="https://i.imgur.com/OnKGVRq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OnKGVRq.png" height="80%" width="80%" />
 <br/>
 <br/>
 Log Analytics Workspace:  
 <br/>
 <br/>
-<img src="https://i.imgur.com/YP977ZY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/YP977ZY.png" height="80%" width="80%" />
 <br />
 <br />
 Disable Firewall in VM: 
 <br/>
 <br/>
-<img src="https://i.imgur.com/GyhISce.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/GyhISce.png" height="80%" width="80%" />
 <br />
 <br />
 Use Host Machine to verify if ICMP packets are reachable using 'ping -t <VM IP address>'.
@@ -69,7 +69,7 @@ Step 3: Script Execution
 Powershell: 
 <br/> 
 <br/>
-<img src="https://i.imgur.com/D7thSgi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/D7thSgi.png" height="80%" width="80%" /> 
 <br/> 
 <br/>
 The Powershell script detects failed RDP logins in Windows Security Events, ingesting logs into Log Analytics workspaces, and enriching output with geographical data.
@@ -81,13 +81,13 @@ Step 4: Extract Fields from Custom Log File
 <br/>
 Run Query:<br/>
 <br/>
-<img src="https://i.imgur.com/ZD0hxYm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ZD0hxYm.png" height="80%" width="80%"/>
 <br />
 <br /> 
 Results of Failed RDP after 24 Hours:
 <br/>
 <br/> 
-<img src="https://i.imgur.com/qUX0dqS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qUX0dqS.png" height="80%" width="80%" />
 <br />
 <br />
 <!--
