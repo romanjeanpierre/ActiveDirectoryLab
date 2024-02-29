@@ -84,12 +84,14 @@ Run Query:<br/>
 <img src="https://i.imgur.com/ZD0hxYm.png" height="80%" width="80%"/>
 <br />
 <br /> 
-Results of Failed RDP after 24 Hours:
+<H2> Results: </H2>
+ <p> Approximately 1.5K brute force attempts across 10 countries in the span of 24 Hours </p>
 <br/>
 <br/> 
 <img src="https://i.imgur.com/qUX0dqS.png" height="80%" width="80%" />
 <br />
 <br />
+
 <!--
  ```diff
 - text in red
